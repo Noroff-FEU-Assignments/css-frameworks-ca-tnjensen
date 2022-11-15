@@ -7,7 +7,7 @@ body{
     height: 100%;
 }
 body{
-    background: $background-color;
+    background: radial-gradient(white, $body-gradient);
     display: flex;
     flex-direction: column;
     color: $copy;

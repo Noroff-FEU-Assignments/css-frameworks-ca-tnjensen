@@ -9288,7 +9288,7 @@ body {
 }
 
 body {
-  background: #EFEFEF;
+  background: radial-gradient(white, #e5e5e5);
   display: flex;
   flex-direction: column;
   color: #767676;
@@ -9395,6 +9395,12 @@ h1 {
 
 .navbar {
   padding-left: 20px !important;
+  min-height: 60px;
+  padding-bottom: 40px;
+  position: absolute;
+  z-index: 100;
+  background: #EFEFEF;
+  width: 100%;
 }
 
 .navbar li {
@@ -9412,12 +9418,17 @@ h1 {
 }
 
 .navbar-collapse {
-  padding-top: 40px;
+  padding-top: 25px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-collapse {
+    padding-top: 0;
+  }
 }
 @media (min-width: 992px) {
   .navbar-collapse ul, .navbar-collapse form {
     position: relative;
-    top: -20px;
+    top: -10px;
   }
 }
 @media (min-width: 992px) {
@@ -9431,4 +9442,40 @@ h1 {
     right: 0;
     top: 40px;
   }
+}
+
+.carousel-indicators li {
+  padding: 10px 0;
+}
+.carousel-indicators li.active {
+  background: #E92569;
+  padding: 0;
+  position: relative;
+  top: 10px;
+}
+
+.card {
+  background: radial-gradient(white, #f5f5f5);
+}
+
+.card-image {
+  display: flex;
+  justify-content: center;
+}
+
+.card-header {
+  border-bottom: 1px solid #E92569 !important;
+}
+
+.card-social {
+  color: #0A0A0A;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+.card-social i {
+  color: #0A0A0A;
+  padding-left: 30px;
 }/*# sourceMappingURL=style.css.map */

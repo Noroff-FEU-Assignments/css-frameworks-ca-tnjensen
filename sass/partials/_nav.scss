@@ -24,6 +24,13 @@
 }
 .navbar{
     padding-left: 20px !important;
+    min-height: 60px;
+    padding-bottom: 40px;
+    position: absolute;
+    z-index: 100;
+    background: $background-color;
+    width: 100%;
+
 }
 .navbar li{
     padding-right: 20px;
@@ -37,12 +44,16 @@
     top: 15px;
 }
 .navbar-collapse{
-    padding-top: 40px;
+    padding-top: 25px;
     
+    @media (min-width: 768px) and (max-width: 991px){
+        padding-top: 0;
+    }
+
     & ul, form{
         @media (min-width: 992px){
             position: relative;
-            top: -20px;
+            top: -10px;
         }
     }
     & .ml-auto{
