@@ -1,0 +1,17 @@
+body{
+    font-family: $font-secondary;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: $font-primary;
+}
+h1{
+    font-size: 1.8em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: $primary;
+}
+.header-branding h5{
+    color: $primary;
+    font-weight: 600;
+    font-style: italic;
+}

@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+html,
+body{
+    height: 100%;
+}
+body{
+    background: $background-color;
+    display: flex;
+    flex-direction: column;
+    color: $copy;
+}
+.wrapper{
+    flex: 1 0 auto;
+}
+ul{
+    list-style-type: none;
+    color: $secondary;
+}
+ul li{
+    padding: 1rem 0;
+
+    & .active{
+        background: white;
+        padding: 1rem 0;
+    }
+}
+ul li a{
+    color: $copy;
+    cursor: pointer;
+    padding-left: 10px !important;
+}
+.search-btn{
+    background: $primary;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    font-size: .8rem;
+}
+input[type="text"]{
+    font-size: .8rem;
+    border: none;
+    height: 40px;
+    border-radius: 0;
+}
+.form-horizontal{
+    display: flex;
+    margin-right: 40px;
+
+   & input, button{
+    @media (min-width: 992px){
+        height: 30px;
+        position: relative;
+        top: 5px;
+        }
+   }
+}

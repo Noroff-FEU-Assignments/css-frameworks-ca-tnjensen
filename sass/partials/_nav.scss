@@ -1,0 +1,63 @@
+.navbar-light button{
+    border: none !important;
+}
+.navbar-brand{
+    color: $primary !important;
+    font-family: $font-primary;
+    font-style: italic;
+    font-weight: 600;
+}
+.active a{
+    background: white;
+    width: 100vw !important;
+    margin-left: -20px;
+    position: relative;
+    top: 8px;
+    padding-left: 30px !important;
+
+    @media (min-width: 992px){
+        width: auto !important;
+        padding: 0 1rem !important;
+        padding: 0 10px;
+        margin-left: 10px;   
+    }
+}
+.navbar{
+    padding-left: 20px !important;
+}
+.navbar li{
+    padding-right: 20px;
+}
+.navbar li a{
+    color: $secondary !important;
+}
+.navbar-toggler-icon{
+    position: absolute;
+    right: 30px !important;
+    top: 15px;
+}
+.navbar-collapse{
+    padding-top: 40px;
+    
+    & ul, form{
+        @media (min-width: 992px){
+            position: relative;
+            top: -20px;
+        }
+    }
+    & .ml-auto{
+        @media (min-width: 992px){
+            margin-left: 20px !important;
+        }
+       
+    }
+    & form{
+        @media (min-width: 992px){
+            position: absolute;
+            right: 0;
+            top: 40px;
+        }
+        
+    }
+
+}
