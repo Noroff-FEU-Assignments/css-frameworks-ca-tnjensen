@@ -24,13 +24,12 @@ ul li{
 
     & .active{
         background: white;
-        padding: 1rem 0;
     }
 }
 ul li a{
     color: $copy;
     cursor: pointer;
-    padding-left: 10px !important;
+    
 }
 .search-btn{
     background: $primary;
@@ -56,4 +55,10 @@ input[type="text"]{
         top: 5px;
         }
    }
+}
+.card-link + .card-link{
+    margin: 0;
+}
+.card-link i{
+    font-size: 1.5rem;
 }

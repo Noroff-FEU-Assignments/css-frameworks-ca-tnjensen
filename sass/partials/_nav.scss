@@ -1,19 +1,29 @@
-.navbar-light button{
+.navbar-light{
     border: none !important;
+    /* position: absolute;
+    top: 5px;
+    right: 0; */
 }
 .navbar-brand{
     color: $primary !important;
     font-family: $font-primary;
     font-style: italic;
     font-weight: 600;
+    position: relative;
+    top: 10px;
+
+    @media (min-width: 992px){
+        position: relative;
+        top: 0;
+    }
 }
-.active a{
+.navbar .active a{
     background: white;
     width: 100vw !important;
     margin-left: -20px;
     position: relative;
     top: 8px;
-    padding-left: 30px !important;
+    padding-left: 20px !important;
 
     @media (min-width: 992px){
         width: auto !important;
@@ -24,7 +34,7 @@
 }
 .navbar{
     padding-left: 20px !important;
-    min-height: 60px;
+    min-height: 75px;
     padding-bottom: 40px;
     position: absolute;
     z-index: 100;
@@ -38,10 +48,11 @@
 .navbar li a{
     color: $secondary !important;
 }
-.navbar-toggler-icon{
+.navbar-toggler{
     position: absolute;
     right: 30px !important;
     top: 15px;
+    border: none;
 }
 .navbar-collapse{
     padding-top: 25px;

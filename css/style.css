@@ -9308,13 +9308,11 @@ ul li {
 }
 ul li .active {
   background: white;
-  padding: 1rem 0;
 }
 
 ul li a {
   color: #767676;
   cursor: pointer;
-  padding-left: 10px !important;
 }
 
 .search-btn {
@@ -9344,6 +9342,14 @@ input[type=text] {
   }
 }
 
+.card-link + .card-link {
+  margin: 0;
+}
+
+.card-link i {
+  font-size: 1.5rem;
+}
+
 body {
   font-family: "Lato", Verdana, sans-serif;
 }
@@ -9359,14 +9365,18 @@ h1 {
   color: #E92569;
 }
 
-.header-branding h5 {
+.navbar-brand {
   color: #E92569;
   font-weight: 600;
   font-style: italic;
+  padding: 0;
 }
 
-.navbar-light button {
+.navbar-light {
   border: none !important;
+  /* position: absolute;
+  top: 5px;
+  right: 0; */
 }
 
 .navbar-brand {
@@ -9374,18 +9384,26 @@ h1 {
   font-family: "Playfair Display", Georgia, "Times New Roman", Times, serif;
   font-style: italic;
   font-weight: 600;
+  position: relative;
+  top: 10px;
+}
+@media (min-width: 992px) {
+  .navbar-brand {
+    position: relative;
+    top: 0;
+  }
 }
 
-.active a {
+.navbar .active a {
   background: white;
   width: 100vw !important;
   margin-left: -20px;
   position: relative;
   top: 8px;
-  padding-left: 30px !important;
+  padding-left: 20px !important;
 }
 @media (min-width: 992px) {
-  .active a {
+  .navbar .active a {
     width: auto !important;
     padding: 0 1rem !important;
     padding: 0 10px;
@@ -9395,7 +9413,7 @@ h1 {
 
 .navbar {
   padding-left: 20px !important;
-  min-height: 60px;
+  min-height: 75px;
   padding-bottom: 40px;
   position: absolute;
   z-index: 100;
@@ -9411,10 +9429,11 @@ h1 {
   color: #0A0A0A !important;
 }
 
-.navbar-toggler-icon {
+.navbar-toggler {
   position: absolute;
   right: 30px !important;
   top: 15px;
+  border: none;
 }
 
 .navbar-collapse {
@@ -9456,6 +9475,7 @@ h1 {
 
 .card {
   background: radial-gradient(white, #f5f5f5);
+  border-radius: 10px;
 }
 
 .card-image {
@@ -9464,7 +9484,10 @@ h1 {
 }
 
 .card-header {
-  border-bottom: 1px solid #E92569 !important;
+  background: white;
+}
+.card-header + .show {
+  border-top: 1px solid #E92569 !important;
 }
 
 .card-social {
@@ -9478,4 +9501,47 @@ h1 {
 .card-social i {
   color: #0A0A0A;
   padding-left: 30px;
+}
+
+@media (min-width: 992px) {
+  .accordion {
+    display: none;
+  }
+}
+.nav-tabs, .tab-content {
+  display: none;
+}
+@media (min-width: 992px) {
+  .nav-tabs, .tab-content {
+    display: flex;
+  }
+}
+
+.nav-tabs .nav-link {
+  color: #E92569;
+}
+
+.nav-tabs .nav-link.active {
+  padding-bottom: 1rem;
+  padding-right: 2rem;
+  border-radius: 10px 10px 0 0;
+  margin-right: 10px;
+}
+
+.tab-content > .active {
+  background: white;
+  position: relative;
+  top: -15px;
+  padding-bottom: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.tab-content > .active .card-social {
+  justify-content: left;
+  position: relative;
+  top: 40%;
+}
+
+.card-image img {
+  padding: 1.5rem;
 }/*# sourceMappingURL=style.css.map */

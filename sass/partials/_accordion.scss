@@ -1,12 +1,17 @@
 .card{
     background: radial-gradient(white, $card-gradient);
+    border-radius: 10px;
 }
 .card-image{
     display: flex;
     justify-content: center;
 }
 .card-header{
-    border-bottom: 1px solid $primary !important;
+    background: white;
+
+    & + .show{
+        border-top: 1px solid $primary !important;
+    }
 }
 .card-social{
     color: $secondary;
@@ -19,5 +24,10 @@
     & i{
         color: $secondary;
         padding-left: 30px;
+    }
+}
+@media (min-width: 992px){
+    .accordion{
+        display: none;
     }
 }

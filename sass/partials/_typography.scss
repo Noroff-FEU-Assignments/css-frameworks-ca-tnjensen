@@ -10,8 +10,9 @@ h1{
     margin-bottom: 1em;
     color: $primary;
 }
-.header-branding h5{
+.navbar-brand{
     color: $primary;
     font-weight: 600;
     font-style: italic;
+    padding: 0;
 }
