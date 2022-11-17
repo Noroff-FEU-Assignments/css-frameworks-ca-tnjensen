@@ -1,6 +1,10 @@
 .contact-form{
     box-shadow: 0 6px 6px rgba(0,0,0,0.04);
-    width: 50%;
+    
+    @media (min-width:992px){
+        width: 50%;
+    }
+   
 }
 .contact-form form{
     padding: 1rem 0;
@@ -15,7 +19,7 @@
     background: $input-bg;
 }
 input[type=checkbox] {
-    /* position: relative; */
+    position: relative;
       cursor: pointer;
 }
 input[type=checkbox]:before {
@@ -44,7 +48,12 @@ input[type=checkbox]:checked:after {
     left: 8px;
 }
 .form-check-label{
-    margin-left: 20px;
+    margin-left: 25px;
+    position: relative;
+    top: 8px;
+}
+.form-check{
+    margin-bottom: 30px;
 }
 .contact-form .form-control{
     background: white;

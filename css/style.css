@@ -9704,7 +9704,11 @@ footer {
 }
 .contact-form {
   box-shadow: 0 6px 6px rgba(0, 0, 0, 0.04);
-  width: 50%;
+}
+@media (min-width: 992px) {
+  .contact-form {
+    width: 50%;
+  }
 }
 
 .contact-form form {
@@ -9723,7 +9727,7 @@ footer {
 }
 
 input[type=checkbox] {
-  /* position: relative; */
+  position: relative;
   cursor: pointer;
 }
 
@@ -9753,7 +9757,13 @@ input[type=checkbox]:checked:after {
 }
 
 .form-check-label {
-  margin-left: 20px;
+  margin-left: 25px;
+  position: relative;
+  top: 8px;
+}
+
+.form-check {
+  margin-bottom: 30px;
 }
 
 .contact-form .form-control {
