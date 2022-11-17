@@ -1,0 +1,35 @@
+.news{
+    border-radius: 15px;
+    margin-bottom: 2em;
+    position: relative;
+    top: 80px;
+}
+.news-header{
+    position: relative;
+    top: 80px;
+} 
+.news .card-title{
+    color: $secondary;
+}
+.news .card-text{
+    color: $footer-copy;
+}
+.news .card-img-top{
+    border-radius: 15px 15px 0 0;
+}
+.news .btn{
+    background-color: $primary;
+    border: none;
+    width: 100%;
+    text-transform: uppercase;
+    height: 40px;
+}
+.news .btn::before{
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 10%;
+    height: 40px;
+    background-color: $footer-copy;
+}

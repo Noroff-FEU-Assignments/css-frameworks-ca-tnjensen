@@ -1,8 +1,5 @@
 .navbar-light{
     border: none !important;
-    /* position: absolute;
-    top: 5px;
-    right: 0; */
 }
 .navbar-brand{
     color: $primary !important;
@@ -29,7 +26,7 @@
         width: auto !important;
         padding: 0 1rem !important;
         padding: 0 10px;
-        margin-left: 10px;   
+        margin-left: 10px; 
     }
 }
 .navbar{
@@ -40,6 +37,13 @@
     z-index: 100;
     background: $background-color;
     width: 100%;
+
+    & .form-control{
+        background: white;
+    }
+    @media (min-width:992px){
+        position: relative;
+    }
 
 }
 .navbar li{
@@ -70,16 +74,15 @@
     & .ml-auto{
         @media (min-width: 992px){
             margin-left: 20px !important;
-        }
-       
+        }   
     }
-    & form{
-        @media (min-width: 992px){
-            position: absolute;
-            right: 0;
-            top: 40px;
-        }
-        
+    
+    @media (min-width: 992px){
+        display: flex;
+        justify-content: space-between;   
     }
-
+}
+.pagination{
+    position: relative;
+    top: 60px;
 }
