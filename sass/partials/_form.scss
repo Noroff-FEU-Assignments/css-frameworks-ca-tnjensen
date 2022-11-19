@@ -63,3 +63,28 @@ input[type=checkbox]:checked:after {
         margin-top: 0;
     }
 }
+.form-horizontal{
+    display: flex;
+    width: auto !important;
+    margin-top: 15px;
+
+    @media (min-width: 992px){
+        position: relative;
+        top: -20px !important;
+
+        & button{
+            position: relative;
+            top: -5px;
+        }
+        }
+}
+.form-horizontal input{    
+    width: 90%;
+    padding-left: 10px;
+
+    @media (min-width: 992px){
+        position: relative;
+        top: -5px;
+        height: 30px !important;
+    }
+}

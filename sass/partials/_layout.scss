@@ -22,9 +22,6 @@ ul{
 ul li{
     padding: 1rem 0;
 
-    & .active{
-        background: white;
-    }
 }
 ul li a{
     color: $footer-copy;
@@ -43,22 +40,6 @@ input[type="text"]{
     border: none;
     height: 40px;
     border-radius: 0;
-}
-.form-horizontal{
-    display: flex;
-    justify-content: space-around;
-    margin-right: 30px;   
-
-    @media (min-width: 992px){
-        position: relative;
-    }
-    & input, button{
-    @media (min-width: 992px){
-        height: 30px;
-        position: relative;
-        top: 0;
-        }
-   }
 }
 .card-link + .card-link{
     margin: 0;

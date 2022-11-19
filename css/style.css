@@ -9306,9 +9306,6 @@ ul {
 ul li {
   padding: 1rem 0;
 }
-ul li .active {
-  background: white;
-}
 
 ul li a {
   color: #767676;
@@ -9328,24 +9325,6 @@ input[type=text] {
   border: none;
   height: 40px;
   border-radius: 0;
-}
-
-.form-horizontal {
-  display: flex;
-  justify-content: space-around;
-  margin-right: 30px;
-}
-@media (min-width: 992px) {
-  .form-horizontal {
-    position: relative;
-  }
-}
-@media (min-width: 992px) {
-  .form-horizontal input, .form-horizontal button {
-    height: 30px;
-    position: relative;
-    top: 0;
-  }
 }
 
 .card-link + .card-link {
@@ -9393,31 +9372,44 @@ h1 {
 @media (min-width: 992px) {
   .navbar-brand {
     position: relative;
-    top: 0;
+    top: 10px;
   }
 }
 
-.navbar .active a {
+.navbar .active {
   background: white;
-  width: 100vw !important;
-  margin-left: -20px;
-  position: relative;
-  top: 8px;
+  width: 100vw;
   padding-left: 20px !important;
+  position: relative;
+  left: -20px;
+  right: 0;
 }
 @media (min-width: 992px) {
-  .navbar .active a {
-    width: auto !important;
+  .navbar .active {
     padding: 0 1rem !important;
-    padding: 0 10px;
+    position: relative;
+    left: 0;
     margin-left: 10px;
+    width: auto !important;
   }
+}
+
+@media (min-width: 992px) {
+  .navbar .nav-link {
+    padding: 0;
+    position: relative;
+    top: -15px;
+  }
+}
+
+.navbar .nav-link, nav-link.active {
+  color: #0A0A0A !important;
 }
 
 .navbar {
-  padding-left: 20px !important;
-  min-height: 75px;
-  padding-bottom: 40px;
+  min-height: 65px;
+  margin: 0 auto;
+  padding-bottom: 30px;
   position: absolute;
   z-index: 100;
   background: #EFEFEF;
@@ -9442,17 +9434,17 @@ h1 {
 
 .navbar-toggler {
   position: absolute;
-  right: 30px !important;
+  right: 30px;
   top: 15px;
   border: none;
 }
 
 .navbar-collapse {
-  padding-top: 25px;
+  padding-top: 50px !important;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar-collapse {
-    padding-top: 0;
+    padding-top: 30px !important;
   }
 }
 @media (min-width: 992px) {
@@ -9486,6 +9478,18 @@ h1 {
   padding: 0;
   position: relative;
   top: 10px;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel-inner > .carousel-item img {
+  width: 100%;
+  min-height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
 }
 
 .card-home {
@@ -9773,5 +9777,32 @@ input[type=checkbox]:checked:after {
 @media (min-width: 992px) {
   .contact-form {
     margin-top: 0;
+  }
+}
+.form-horizontal {
+  display: flex;
+  width: auto !important;
+  margin-top: 15px;
+}
+@media (min-width: 992px) {
+  .form-horizontal {
+    position: relative;
+    top: -20px !important;
+  }
+  .form-horizontal button {
+    position: relative;
+    top: -5px;
+  }
+}
+
+.form-horizontal input {
+  width: 90%;
+  padding-left: 10px;
+}
+@media (min-width: 992px) {
+  .form-horizontal input {
+    position: relative;
+    top: -5px;
+    height: 30px !important;
   }
 }/*# sourceMappingURL=style.css.map */

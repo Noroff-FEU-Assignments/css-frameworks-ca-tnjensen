@@ -11,28 +11,40 @@
 
     @media (min-width: 992px){
         position: relative;
-        top: 0;
+        top: 10px;
     }
 }
-.navbar .active a{
+.navbar .active{
     background: white;
-    width: 100vw !important;
-    margin-left: -20px;
-    position: relative;
-    top: 8px;
+    width: 100vw;
     padding-left: 20px !important;
-
+    position: relative;
+    left: -20px;
+    right: 0;
+   
     @media (min-width: 992px){
-        width: auto !important;
         padding: 0 1rem !important;
-        padding: 0 10px;
+        position: relative;
+        left: 0;
         margin-left: 10px; 
+        width: auto !important;
     }
+}
+.navbar .nav-link{
+
+    @media (min-width:992px){
+        padding: 0;
+        position: relative;
+        top: -15px; 
+    }
+}
+.navbar .nav-link, nav-link.active{
+    color: $secondary !important;
 }
 .navbar{
-    padding-left: 20px !important;
-    min-height: 75px;
-    padding-bottom: 40px;
+    min-height: 65px;
+    margin: 0 auto;
+    padding-bottom: 30px;
     position: absolute;
     z-index: 100;
     background: $background-color;
@@ -44,7 +56,6 @@
     @media (min-width:992px){
         position: relative;
     }
-
 }
 .navbar li{
     padding-right: 20px;
@@ -54,15 +65,15 @@
 }
 .navbar-toggler{
     position: absolute;
-    right: 30px !important;
+    right: 30px;
     top: 15px;
     border: none;
 }
 .navbar-collapse{
-    padding-top: 25px;
+    padding-top: 50px !important;
     
     @media (min-width: 768px) and (max-width: 991px){
-        padding-top: 0;
+        padding-top: 30px !important;
     }
 
     & ul, form{
@@ -84,5 +95,5 @@
 }
 .pagination{
     position: relative;
-    top: 60px;
+    top: 60px
 }
