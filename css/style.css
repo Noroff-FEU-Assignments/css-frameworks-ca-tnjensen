@@ -9748,8 +9748,11 @@ footer {
   background: #E92569;
   color: white;
   border: none;
-  padding: 8px;
+  padding: 0 10px;
+  height: 40px;
   font-size: 0.8rem;
+  position: relative;
+  top: 3px !important;
 }
 @media (min-width: 992px) {
   .form-horizontal {
@@ -9761,6 +9764,8 @@ footer {
     top: -5px;
     height: 30px;
     padding: 0 8px;
+    position: relative;
+    top: -2px !important;
   }
 }
 

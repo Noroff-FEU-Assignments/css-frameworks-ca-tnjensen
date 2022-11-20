@@ -24,8 +24,12 @@
         background: $primary;
         color: white;
         border: none;
-        padding: 8px;
+        padding: 0 10px;
+        height: 40px;
         font-size: .8rem;
+        position: relative;
+        top: 3px !important;
+        
     }
     @media (min-width: 992px){
         position: relative;
@@ -36,6 +40,8 @@
             top: -5px;
             height: 30px;
             padding: 0 8px;
+            position: relative;
+            top: -2px !important;
             
         }
     }
