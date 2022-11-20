@@ -9756,8 +9756,6 @@ footer {
 }
 @media (min-width: 992px) {
   .form-horizontal input {
-    position: relative;
-    top: -5px;
     height: 30px;
   }
 }
@@ -9769,7 +9767,7 @@ footer {
   height: 40px;
   font-size: 0.8rem;
   position: relative;
-  top: 3px;
+  top: 4px;
 }
 @media (min-width: 992px) {
   .form-horizontal {
@@ -9777,12 +9775,8 @@ footer {
     top: -20px;
   }
   .form-horizontal button {
-    position: relative;
-    top: -5px;
     height: 30px;
     padding: 0 8px;
-    position: relative;
-    top: -2px;
   }
 }
 

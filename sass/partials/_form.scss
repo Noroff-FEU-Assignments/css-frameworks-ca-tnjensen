@@ -15,8 +15,6 @@
         width: 100%;
 
         @media (min-width: 992px){
-            position: relative;
-            top: -5px;
             height: 30px;
         }
     }
@@ -28,21 +26,17 @@
         height: 40px;
         font-size: .8rem;
         position: relative;
-        top: 3px;
+        top: 4px;
+
         
     }
     @media (min-width: 992px){
         position: relative;
         top: -20px;
 
-        & button{
-            position: relative;
-            top: -5px;
+        & button{  
             height: 30px;
-            padding: 0 8px;
-            position: relative;
-            top: -2px;
-            
+            padding: 0 8px;  
         }
     }
 }
