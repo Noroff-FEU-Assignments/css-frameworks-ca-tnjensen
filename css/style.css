@@ -9312,14 +9312,6 @@ ul li a {
   cursor: pointer;
 }
 
-.search-btn {
-  background: #E92569;
-  color: white;
-  border: none;
-  padding: 5px 8px;
-  font-size: 0.8rem;
-}
-
 input[type=text] {
   font-size: 0.8rem;
   border: none;
@@ -9376,16 +9368,17 @@ h1 {
   }
 }
 
-.navbar .active {
+.navbar-nav .nav-link.active {
   background: white;
-  width: 100vw;
-  padding-left: 20px !important;
+  width: calc(100% + 40px);
+  overflow-x: hidden;
+  padding: 10px 80px 10px 20px !important;
   position: relative;
   left: -20px;
   right: 0;
 }
 @media (min-width: 992px) {
-  .navbar .active {
+  .navbar-nav .nav-link.active {
     padding: 0 1rem !important;
     position: relative;
     left: 0;
@@ -9395,7 +9388,7 @@ h1 {
 }
 
 @media (min-width: 992px) {
-  .navbar .nav-link {
+  .navbar-nav .nav-link {
     padding: 0;
     position: relative;
     top: -15px;
@@ -9715,6 +9708,41 @@ footer {
   }
 }
 
+.form-horizontal {
+  display: flex;
+  margin-top: 15px;
+}
+.form-horizontal input {
+  padding-left: 10px;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .form-horizontal input {
+    position: relative;
+    top: -5px;
+    height: 30px !important;
+  }
+}
+.form-horizontal button {
+  background: #E92569;
+  color: white;
+  border: none;
+  padding: 8px;
+  font-size: 0.8rem;
+}
+@media (min-width: 992px) {
+  .form-horizontal {
+    position: relative;
+    top: -20px !important;
+  }
+  .form-horizontal button {
+    position: relative;
+    top: -5px;
+    height: 30px;
+    padding: 0 8px;
+  }
+}
+
 .contact-form form {
   padding: 1rem 0;
 }
@@ -9777,32 +9805,5 @@ input[type=checkbox]:checked:after {
 @media (min-width: 992px) {
   .contact-form {
     margin-top: 0;
-  }
-}
-.form-horizontal {
-  display: flex;
-  width: auto !important;
-  margin-top: 15px;
-}
-@media (min-width: 992px) {
-  .form-horizontal {
-    position: relative;
-    top: -20px !important;
-  }
-  .form-horizontal button {
-    position: relative;
-    top: -5px;
-  }
-}
-
-.form-horizontal input {
-  width: 90%;
-  padding-left: 10px;
-}
-@media (min-width: 992px) {
-  .form-horizontal input {
-    position: relative;
-    top: -5px;
-    height: 30px !important;
   }
 }/*# sourceMappingURL=style.css.map */
