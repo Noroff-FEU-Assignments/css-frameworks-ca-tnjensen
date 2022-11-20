@@ -33,3 +33,21 @@
     height: 40px;
     background-color: $footer-copy;
 }
+.pagination{
+    position: relative;
+    top: 60px
+}
+@media (min-width: 992px){
+    .news{
+        position: relative;
+        top: 40px;
+    }
+    .news-header{
+        position: relative;
+        top: 20px;
+    } 
+    .pagination{
+        position: relative;
+        top: 30px;
+    }
+}

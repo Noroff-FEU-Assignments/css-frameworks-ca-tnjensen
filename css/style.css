@@ -9461,11 +9461,6 @@ h1 {
   }
 }
 
-.pagination {
-  position: relative;
-  top: 60px;
-}
-
 .carousel-indicators li {
   padding: 10px 0;
 }
@@ -9647,6 +9642,25 @@ footer {
   background-color: #767676;
 }
 
+.pagination {
+  position: relative;
+  top: 60px;
+}
+
+@media (min-width: 992px) {
+  .news {
+    position: relative;
+    top: 40px;
+  }
+  .news-header {
+    position: relative;
+    top: 20px;
+  }
+  .pagination {
+    position: relative;
+    top: 30px;
+  }
+}
 .contact-header {
   margin-top: 6rem;
 }
