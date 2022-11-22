@@ -4,7 +4,7 @@
 }
 .card-image{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 }
 .card-header{
     background: white;
