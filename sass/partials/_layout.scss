@@ -43,3 +43,14 @@ input[type="text"]{
 .home-paragraph{
     margin-bottom: 60px;
 }
+.footer{
+    display: flex;
+    flex-shrink: 0;
+    
+    @media (min-width:992px){
+        max-height: 60px;
+        display: flex;
+        align-items: center;
+    }
+    
+}

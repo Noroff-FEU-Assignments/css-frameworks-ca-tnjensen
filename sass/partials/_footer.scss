@@ -1,6 +1,7 @@
-footer{
+.footer{
     background: $white;
-    margin-top: 6rem;
+    display: flex;
+    flex-shrink: 0;
 }
 .footer-social{
     display: flex;
@@ -21,7 +22,6 @@ footer{
     .footer-content{
         display: flex;
         justify-content: space-between;
-        position: relative;
         
         & .footer-social i{
             margin-top:0;
@@ -38,7 +38,5 @@ footer{
         & .footer-copyright{
             justify-content: flex-end;
         }
-       
-
     }
 }
