@@ -48,8 +48,6 @@ input[type="text"]{
     flex-shrink: 0;
     
     @media (min-width:992px){
-        max-height: 60px;
-        display: flex;
         align-items: center;
     }
     
