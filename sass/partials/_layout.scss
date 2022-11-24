@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+html,
+body{
+    height: 100% !important;
+}
+body{
+    background: radial-gradient(white, $body-gradient);
+    display: flex;
+    flex-direction: column;
+    color: $footer-copy;
+}
+.wrapper{
+    flex: 1 0 auto;
+}
+ul{
+    list-style-type: none;
+    color: $secondary;
+}
+ul li{
+    padding: 1rem 0;
+
+}
+ul li a{
+    color: $footer-copy;
+    cursor: pointer;
+    
+}
+input[type="text"]{
+    font-size: .8rem;
+    border: none;
+    height: 40px;
+    border-radius: 0;
+}
+.card-link + .card-link{
+    margin: 0;
+}
+.card-link i{
+    font-size: 1.5rem;
+}
+.home-paragraph{
+    margin-bottom: 60px;
+}
+.footer{
+    display: flex;
+    flex-shrink: 0;
+    
+    @media (min-width:992px){
+        align-items: center;
+    }
+    
+}

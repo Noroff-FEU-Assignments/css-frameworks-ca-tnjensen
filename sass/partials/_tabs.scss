@@ -1,0 +1,43 @@
+.nav-tabs, .tab-content{
+    display: none;
+
+    @media (min-width:992px){
+        display: flex;
+    }
+}
+
+.nav-tabs .nav-link{
+    color: $primary;
+}
+
+.nav-tabs .nav-item.active{
+  padding: 1rem 2rem;
+  border-radius: 10px 10px 0 0;
+  margin-right: 10px;
+}
+
+.tab-content > .active {
+    background: white;
+    position: relative;
+    top: -15px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    grid-template-columns: repeat(2,1fr);
+
+    & .card-social{
+        justify-content: left;
+        position: relative;
+        top: 35%;
+    }
+}
+.card-image{
+    justify-content: flex-start;
+}
+.card-image img{
+    padding: 1.5rem;
+    
+}
+.tab-content{
+    margin-bottom: 8rem;
+}

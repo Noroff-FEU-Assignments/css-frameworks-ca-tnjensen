@@ -1,0 +1,102 @@
+.navbar-light{
+    border: none;
+}
+.navbar-brand{
+    color:  $navbar-light-active-color;
+    font-family: $font-primary;
+    font-style: italic;
+    font-weight: 600;
+    position: relative;
+    top: 10px;
+
+    @media (min-width: 992px){
+        position: relative;
+        top: 10px;
+    }
+}
+.navbar-nav .nav-link.active{
+    background: white;
+    width: calc(100% + 40px);
+    overflow-x: hidden;
+    padding: 10px 80px 10px 40px;
+    position: relative;
+    left: -20px;
+    right: 0;
+   
+    @media (min-width: 992px){
+        padding: 0 1rem !important;
+        position: relative;
+        left: 0;
+        margin-left: 10px; 
+        margin-top: 0;
+        width: auto !important;
+    }
+}
+.navbar-nav .nav-link{
+    padding: 20px 0;
+    padding-left: 20px;
+
+    @media (min-width:992px){
+        padding: 0;
+        position: relative;
+        top: -15px; 
+    }
+}
+.navbar .nav-link, nav-link.active{
+    color: $secondary !important;
+}
+.navbar{
+    margin: 0 auto;
+    padding-bottom: 30px;
+    min-height: 75px;
+    position: absolute;
+    z-index: 100;
+    background: $background-color;
+    width: 100%;
+
+    & .form-control{
+        background: white;
+    }
+    @media (min-width:992px){
+        position: relative;
+        padding-bottom: 0;
+        padding-top: 0;
+        margin-top: -20px;
+    }
+}
+.navbar li{
+    padding-right: 20px;
+}
+.navbar li a{
+    color: $secondary !important;
+}
+.navbar-toggler{
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    border: none;
+}
+.navbar-collapse{
+    padding-top: 50px !important;
+    
+    @media (min-width: 768px) and (max-width: 991px){
+        padding-top: 30px !important;
+    }
+
+    & ul, form{
+        @media (min-width: 992px){
+            position: relative;
+            top: -10px;
+        }
+    }
+    & .ml-auto{
+        @media (min-width: 992px){
+            margin-left: 20px !important;
+        }   
+    }
+    
+    @media (min-width: 992px){
+        display: flex;
+        justify-content: space-between;   
+    }
+}

@@ -1,0 +1,100 @@
+.contact-form{
+    box-shadow: 0 6px 6px rgba(0,0,0,0.04);
+    
+    @media (min-width:992px){
+        width: 50%;
+    }
+   
+}
+.form-horizontal{ 
+    display: flex;
+    margin-top: 15px;
+
+    & input{
+        padding-left: 20px;
+        width: 100%;
+
+        @media (min-width: 992px){
+            height: 30px;
+        }
+    }
+    & button{
+        background: $primary;
+        color: white;
+        border: none;
+        padding: 0 10px;
+        height: 40px;
+        font-size: .8rem;
+        position: relative;
+        top: 4px;
+
+        
+    }
+    @media (min-width: 992px){
+        position: relative;
+        top: -20px;
+
+        & button{  
+            height: 30px;
+            padding: 0 8px;  
+        }
+    }
+}
+
+.contact-form form{
+    padding: 1rem 0;
+}
+.contact-form button{
+    width: 100%;
+    background: $footer-copy ;
+    border: none;
+    font-size: 1.3rem;
+}
+.input-group-text{
+    background: $input-bg;
+}
+input[type=checkbox] {
+    position: relative;
+      cursor: pointer;
+}
+input[type=checkbox]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+    background-color: $primary;
+}
+input[type=checkbox]:checked:after {
+    content: "";
+    display: block;
+    width: 17px;
+    height: 25px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0;
+    left: 8px;
+}
+.form-check-label{
+    margin-left: 25px;
+    position: relative;
+    top: 8px;
+}
+.form-check{
+    margin-bottom: 30px;
+}
+.contact-form .form-control{
+    background: white;
+}
+@media (min-width:992px){
+    .contact-form{
+        margin-top: 0;
+    }
+}

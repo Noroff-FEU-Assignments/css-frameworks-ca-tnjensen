@@ -1,0 +1,36 @@
+.accordion{
+    margin-bottom: 8rem;
+}
+.card-home{
+    background: radial-gradient(white, $card-gradient);
+    border-radius: 10px;
+}
+.card-image{
+    display: flex;
+    flex-direction: column;
+}
+.card-header{
+    background: white;
+
+    & + .show{
+        border-top: 1px solid $primary;
+    }
+}
+.card-social{
+    color: $secondary;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 25px 0;
+
+    & i{
+        color: $secondary;
+        padding-left: 30px;
+    }
+}
+@media (min-width: 992px){
+    .accordion{
+        display: none;
+    }
+}
