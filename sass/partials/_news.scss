@@ -1,8 +1,6 @@
 .news{
     border-radius: 15px;
     margin-bottom: 2em;
-    position: relative;
-    top: 80px;
 }
 .news-header{
     position: relative;
@@ -33,21 +31,30 @@
     height: 40px;
     background-color: $footer-copy;
 }
-.pagination{
+.pagination.top{
     position: relative;
-    top: 60px
+    top: 60px;
+    padding-bottom: 6rem;
+}
+.pagination.bottom{
+    padding-bottom: 4rem;
 }
 @media (min-width: 992px){
     .news{
         position: relative;
-        top: 40px;
+        top: -2rem;
     }
     .news-header{
         position: relative;
-        top: 20px;
-    } 
-    .pagination{
+        top: 1rem;
+    }
+    .pagination.top{
         position: relative;
-        top: 30px;
+        top: 1rem;
+        padding-bottom: 4rem;
+    } 
+    .pagination.bottom{
+        margin-top: -2rem;
+        margin-bottom: 4rem;
     }
 }
