@@ -9583,8 +9583,15 @@ h1 {
 
 .nav-tabs .nav-item.active {
   padding: 1rem 2rem;
-  border-radius: 10px 10px 0 0;
   margin-right: 10px;
+}
+
+.nav-tabs .nav-link {
+  border-radius: 10px 10px 0 0;
+  border-color: none;
+  position: relative;
+  top: 1px;
+  left: -1px;
 }
 
 .tab-content > .active {
