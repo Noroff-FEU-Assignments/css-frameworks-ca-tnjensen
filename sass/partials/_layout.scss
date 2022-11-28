@@ -71,7 +71,10 @@ input[type="text"]{
     
 }
 @media (min-width:768px){
+    .contact-form{
+        margin-top: 6rem;
+    }
     .list-group{
-        margin-top: 14rem;
+        margin-top: 8rem;
     }
 }

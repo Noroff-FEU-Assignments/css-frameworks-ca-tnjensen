@@ -8,21 +8,14 @@
 .contact-header{
     margin-top: 6rem;
 }
-
-.contact-details{
-    position: relative;
-    top: 80px;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    max-width: 25%;
-    gap: 15px;
-    padding: 1.5rem 0 3rem 0;
-}
-.contact-details p{
+.list-group-item:last-child span{
     display: none;
 
-    @media (min-width: 992px){
+    @media (min-width: 768px){
         display: block;
+        position: relative;
+        top: -25px;
+        left: 25px;
     }
 }
 .contact-details i{
@@ -31,50 +24,11 @@
     padding-top: 0;
 }
 @media (min-width:768px){
-    .contact-content{
-        display: flex;
-        flex-direction: row-reverse;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-    }
-    .contact-header{
-        margin-top: 4rem;
-        
-    }
-    .contact-details{
-        position: relative;
-        left: 200px;
-        max-height: 200px;
-        margin-left: 6rem;
-        gap: 15px 0;
-    }
-    .contact-details span{
-        position: relative;
-        left: -1.5rem;
-    }
     .list-group{
-        margin-top: 8rem;
+        margin-top: 12rem;
+        margin-left: 1rem;
     }
-}
-@media (min-width:992px){
-    .contact-header{
-        margin-top: 4rem;
-        
-    }
-    .contact-details{
-        position: relative;
-        left: 250px;
-        margin-left: 9rem;
-    }
-    .contact-details span{
-        position: relative;
-        left: -4rem;
-    }
-}
-@media (min-width: 1200px){
-    .contact-details{
-        position: relative;
-        left: 350px;
-        margin-left: 9rem;
+    .list-group-inner{
+        margin-left: 0;
     }
 }
