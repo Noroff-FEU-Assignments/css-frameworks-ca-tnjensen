@@ -14,6 +14,7 @@ body{
 }
 .wrapper{
     flex: 1 0 auto;
+    height: 100vh;
 }
 ul{
     list-style-type: none;
@@ -43,6 +44,23 @@ input[type="text"]{
 .home-paragraph{
     margin-bottom: 60px;
 }
+.list-group i{
+    color: $footer-copy;
+    font-size: 1.5rem;
+}
+.list-group li{
+    background: none;
+    border: none;
+
+    & span{
+        padding-left: 15px;
+    }
+}
+.list-group-inner{
+    margin-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
 .footer{
     display: flex;
     flex-shrink: 0;
@@ -51,4 +69,9 @@ input[type="text"]{
         align-items: center;
     }
     
+}
+@media (min-width:768px){
+    .list-group{
+        margin-top: 14rem;
+    }
 }

@@ -1,10 +1,6 @@
 .contact-form{
     box-shadow: 0 6px 6px rgba(0,0,0,0.04);
     
-    @media (min-width:992px){
-        width: 50%;
-    }
-   
 }
 .form-horizontal{ 
     display: flex;
@@ -43,6 +39,7 @@
 
 .contact-form form{
     padding: 1rem 0;
+    margin-bottom: 8rem;
 }
 .contact-form button{
     width: 100%;
@@ -93,8 +90,9 @@ input[type=checkbox]:checked:after {
 .contact-form .form-control{
     background: white;
 }
-@media (min-width:992px){
+@media (min-width:768px){
     .contact-form{
-        margin-top: 0;
+        margin-top: 4rem;
     }
+   
 }

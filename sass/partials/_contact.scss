@@ -1,3 +1,10 @@
+.list-group{
+    margin-top: 6rem;
+}
+
+.contact-content{
+    margin-bottom: 6rem;
+}
 .contact-header{
     margin-top: 6rem;
 }
@@ -45,9 +52,8 @@
         position: relative;
         left: -1.5rem;
     }
-    .contact-form{
-       position: relative;
-       top: -4rem;
+    .list-group{
+        margin-top: 8rem;
     }
 }
 @media (min-width:992px){
