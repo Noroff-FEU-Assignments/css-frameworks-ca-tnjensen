@@ -9409,7 +9409,7 @@ h1 {
   background: white;
   width: calc(100% + 40px);
   overflow-x: hidden;
-  padding: 10px 80px 10px 40px;
+  padding: 10px 80px 10px 20px;
   position: relative;
   left: -20px;
   right: 0;
@@ -9423,9 +9423,6 @@ h1 {
   }
 }
 
-.navbar-nav .nav-link {
-  padding-left: 20px;
-}
 @media (min-width: 992px) {
   .navbar-nav .nav-link {
     padding: 0;
@@ -9460,8 +9457,12 @@ h1 {
   }
 }
 
-.navbar li {
-  padding-right: 20px;
+.navbar-nav {
+  padding: 3rem 0;
+}
+
+.navbar a {
+  margin: 1rem 0;
 }
 
 .navbar li a {
