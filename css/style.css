@@ -9419,7 +9419,6 @@ h1 {
     padding: 0 1rem;
     position: relative;
     left: 0;
-    /* margin-left: 20px;  */
     margin-top: 0;
   }
 }
@@ -9769,7 +9768,6 @@ h1 {
   }
 }
 .form-horizontal {
-  display: flex;
   margin-top: 15px;
 }
 .form-horizontal input {
