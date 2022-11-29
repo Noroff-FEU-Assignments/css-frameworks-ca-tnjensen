@@ -9503,6 +9503,7 @@ h1 {
 
 .carousel-indicators li {
   padding: 10px 0;
+  opacity: 1;
 }
 .carousel-indicators li.active {
   background: #E92569;
@@ -9517,7 +9518,7 @@ h1 {
 
 .carousel-inner > .carousel-item img {
   width: 100%;
-  min-height: 500px;
+  min-height: 450px;
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
