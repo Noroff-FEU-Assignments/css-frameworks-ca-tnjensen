@@ -12,7 +12,7 @@
 .carousel{
    position: relative;
 }
-.carousel-inner > .carousel-item img{
+.carousel-inner .carousel-item img{
    width: 100%;
    min-height: 450px;
    object-fit: cover;

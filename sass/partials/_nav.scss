@@ -14,6 +14,13 @@
         top: 10px;
     }
 }
+.navbar-nav{
+    padding: 3rem 0;
+
+    @media (min-width: 992px){
+        padding: 0;
+    }
+}
 .navbar-nav .nav-link.active{
     background: white;
     width: calc(100% + 40px);
@@ -24,23 +31,26 @@
     right: 0;
    
     @media (min-width: 992px){
-        padding: 0 1rem;
+        padding: 0 1rem 0 1rem;
         position: relative;
         left: 0;
         margin-top: 0;
     }
 }
 .navbar-nav .nav-link{
-
+    margin: 1rem 0;
+    color: $secondary !important;
+    
     @media (min-width:992px){
         padding: 0;
+        margin: 0;
         margin-right: 10px;
         position: relative;
         top: -15px; 
     }
 }
 .navbar .nav-link, nav-link.active{
-    color: $secondary !important;
+    color: $secondary;
 }
 .navbar{
     margin: 0 auto;
@@ -60,15 +70,6 @@
         padding-top: 0;
         margin-top: -20px;
     }
-}
-.navbar-nav{
-    padding: 3rem 0;
-}
-.navbar a{
-    margin: 1rem 0;
-}
-.navbar li a{
-    color: $secondary !important;
 }
 .navbar-toggler{
     position: absolute;
